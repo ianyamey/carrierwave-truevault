@@ -7,20 +7,18 @@ Adds [TrueVault](https://truevault.com) support to [CarrierWave](https://github.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'carrierwave-truevault'
+gem 'carrierwave-truevault', github: 'ianyamey/carrierwave-truevault'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install carrierwave-truevault
-
 ## Usage
 
-Add a configuration block in your `config/initializers/carrierwave.rb` file.
+* Create a new vault from your [TrueVault console](https://console.truevault.com/#/vaults)
+
+* Add a configuration block in your `config/initializers/carrierwave.rb` file.
 
 ```ruby
 CarrierWave.configure do |config|
@@ -29,7 +27,7 @@ CarrierWave.configure do |config|
 end
 ```
 
-Set your uploader to use the `truevault` storage engine 
+* Set your uploader to use the `truevault` storage engine 
 
 ```ruby
 class SecureFileUploader < CarrierWave::Uploader::Base
