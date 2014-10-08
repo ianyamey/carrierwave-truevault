@@ -37,6 +37,10 @@ class SecureFileUploader < CarrierWave::Uploader::Base
 end
 ```
 
+## Acknowledgements
+
+* This work was inspired by [@codemancode](https://github.com/codemancode) and his [gem](https://github.com/codemancode/carrierwave-truevault), which is based on HTTParty.
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/carrierwave-truevault/fork )
