@@ -91,6 +91,18 @@ module CarrierWave
         end
 
         ##
+        # Remove the file from service
+        #
+        # === Returns
+        #
+        # [Boolean] true for success
+        #
+        def delete
+          response = client["/vaults/#{vault_id}/blobs/#{blob_id}"].delete
+          response.code == 200
+        end
+
+        ##
         # Read content type of file from service
         #
         # === Returns
